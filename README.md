@@ -1,38 +1,37 @@
 # node-mac
 
-I no longer have enough time to properly maintain this project and am seeking a new primary maintainer.
-
-This project has gained traction for two reasons:
-
-1. It works well on macOS.
-1. The same API can be used on Windows and Linux.
-
-The ideal maintainer would also support or at least closely work with the maintainer of ([node-windows](https://github.com/coreybutler/node-windows) & [node-linux](https://github.com/coreybutler/node-linux)). Please get in touch if you are interested in taking over.
-
 [![NPM version](https://badge.fury.io/js/node-mac.png)](http://badge.fury.io/js/node-mac)
 [![NGN Dependencies](https://david-dm.org/coreybutler/node-mac.png)](https://david-dm.org/coreybutler/node-mac)
 [![Build](https://api.travis-ci.org/coreybutler/node-mac.png)](https://travis-ci.org/coreybutler/node-mac)
 
-Follow the author on [G+](https://plus.google.com/u/1/111169756342687497578?rel=author)
-or [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
+**Sponsors (as of 2020)**
+
+<table cellpadding="10" cellspacing="0" border="0">
+  <tr>
+    <td><a href="https://metadoc.io"><img src="https://github.com/coreybutler/staticassets/raw/master/sponsors/metadoclogobig.png" width="200px"/></a></td>
+    <td><a href="https://butlerlogic.com"><img src="https://github.com/coreybutler/staticassets/raw/master/sponsors/butlerlogic_logo.png" width="200px"/></a></td>
+  </tr>
+</table>
+
+Follow the author on [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
 
 This README provides a pretty good overview of what node-mac has to offer, but better
 documentation is now available at the [node-mac documentation portal](http://coreybutler.github.io/node-mac).
 
 # node-mac
 
-This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
-However; it is capable of providing the same features for Node.JS scripts
-independently of NGN.
+This is a standalone module, originally designed for internal use in [NGN](http://github.com/ngnjs/NGN).
+However; it is capable of providing the same features for Node.js scripts independently of NGN.
 
-For alternative versions, see [node-windows](http://github.com/coreybutler/node-windows)
-and [node-linux](http://github.com/coreybutler/node-linux)
+For alternative versions, see [node-windows](http://github.com/coreybutler/node-windows) and [node-linux](http://github.com/coreybutler/node-linux)
 
 ## Overview
 
 This module helps create/manage native processes and event logs for Node.js applications on Mac OSX.
 
-![Windows Mac](https://raw.github.com/coreybutler/node-mac/master/docs/helloworlddaemon.png)
+![Mac](https://user-images.githubusercontent.com/770982/86995965-fa1da980-c16f-11ea-89d6-9204fb172df6.png)
+
+> **Notice** Some vesions of Node will not display the pretty title (Hello World) of the process. See the [underlying issue](https://github.com/nodejs/node/issues/28945) in Node core. Instead, it just displays "node", but still functions normally.
 
 To start, install node-mac via:
 
@@ -201,7 +200,7 @@ and error logging.
 
 ## Event Logging
 
-![Mac log](https://raw.github.com/coreybutler/node-mac/master/docs/helloworldlog.png)
+![Mac log](https://user-images.githubusercontent.com/770982/86995948-f0944180-c16f-11ea-81c9-0561435092aa.png)
 
 Services created with node-mac have two event logs that can be viewed through the Console app.
 A log source named `myappname.log` provides basic logging for the service. It can be used to see
